@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  notebook:
+    image: 'yanicksenn/jupyter-notebook-kotlin'
+    ports:
+      - '8888:8888'
+    volumes:
+      - '~/Documents/Jupyter/Notebook:/home/jovyan/work'
