@@ -1,34 +1,23 @@
-# Jupyter Notebook kotlin
+# Jupyter Notebook Kotlin
 
 A straight forward addition of the kotlin-kernel to the minimal-notebook from juypter.
 
 ## Usage
 
-### Building
-
-Executing the build script `build.sh` will build a new image accoring to the `Dockerfile`.
-Per default the tag will be the current username + 'juyper-notebook-kotlin'.
+### Pulling 
 
 ```
-> ./build.sh
+$ docker pull yanicksenn/jupyter-notebook-kotlin
 ```
 
 ### Running
 
-The run script will simply setup the container(s) based on the `docker-compose.yml`.
-Alternatively you could also just run `docker-compose up`.
-
 ```
-> ./run.sh
-```
-
-### Stopping
-
-The stop will stop the container(s) and remove the orphaned containers.
-Alternatively you could also just run `docker-compose down --remove-orphans`.
-
-```
-> ./run.sh
+$ docker run -it --rm \ 
+      -p 8888:8888 \
+      -v ~/Documents/Jupyter/Notebook:/home/jovyan/work \
+      --name jupyter-notebook \
+      yanicksenn/jupyter-notebook-kotlin
 ```
 
 ## Disclaimer
