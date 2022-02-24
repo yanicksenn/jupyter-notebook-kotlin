@@ -4,7 +4,7 @@ A straight forward addition of the kotlin-kernel to the minimal-notebook from ju
 
 ## Usage
 
-### Pulling 
+### Pulling
 
 ```
 $ docker pull yanicksenn/jupyter-notebook-kotlin
@@ -13,7 +13,7 @@ $ docker pull yanicksenn/jupyter-notebook-kotlin
 ### Running
 
 ```
-$ docker run -it --rm \ 
+$ docker run -it --rm \
       -p 8888:8888 \
       -v ~/Documents/Jupyter/Notebook:/home/jovyan/work \
       --name jupyter-notebook \
@@ -28,7 +28,7 @@ This is simply a setup for testing purposes.
 ## References
 
 - Github
-  - (Jupyter Docker Stacks)[https://github.com/jupyter/docker-stacks]
-  - (Kotlin-Jupyter)[https://github.com/Kotlin/kotlin-jupyter]
+  - [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks)
+  - [Kotlin-Jupyter](https://github.com/Kotlin/kotlin-jupyter)
 - Docker
-  - (jupyter/minimal-notebook)[https://hub.docker.com/r/jupyter/minimal-notebook]
+  - [jupyter/minimal-notebook](https://hub.docker.com/r/jupyter/minimal-notebook)
