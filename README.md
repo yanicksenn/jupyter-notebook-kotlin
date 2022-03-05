@@ -1,6 +1,6 @@
 # Jupyter Notebook with Kotlin
 
-A straight forward addition of the kotlin-kernel to the minimal-notebook from juypter.
+A straightforward addition of the kotlin-kernel to the minimal-notebook from juypter.
 
 ## Usage
 
